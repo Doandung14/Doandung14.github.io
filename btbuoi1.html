@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloneBlog</title>
+    <link rel="stylesheet" href="btbuoi1.css">
+</head>
+<body>
+    <div id="container">
+        <div id="left">
+    <h1>Thế nào mới là một DevOps thực sự ?</h1>
+    <h2>27 tháng 11, 2020</h2>
+    <div class="ovuong">
+        <div class="nutbam">
+            <a href=""><button class="btn">Học DevOps</button></a>
+        </div>
+        <div class="nutbam">
+            <a href=""><button class="btn">Khóa học kubernetes</button></a>
+        </div>
+        <div class="nutbam">
+            <a href=""><button class="btn">kubernetes</button></a>
+        </div>
+        <div class="nutbam">
+            <a href=""><button class="btn">DevOps</button></a>
+        </div>
+    </div>
+    
+    <br/>
+    <hr>
+    <p>Phương pháp luận biện chứng duy vật về ngành nghề hot nhất trên thị trường tuyển dụng IT hiện nay:<b> DevOps.</b>
+        Xin chào các bạn, cũng lâu rồi mình không lên sóng nhỉ. Chả là đợt vừa rồi mình bắt đầu đi làm trainer ở 1 số lớp học về Kubernetes nên hơi bận bịu. Hôm qua thì cũng vừa hay là buổi cuối với phần trình bày của mình về <code>Zero downtime</code> application. Phần trình bày thì không phải chỉ có gồm những kiến thức công nghệ, cấu hình,... mà còn có nhiều thứ khác liên quan tới quy trình tích hợp, thiết kế ứng dụng, devops,... Qua đó thì mình cũng có cơ hội hệ thống hoá lại những thành quả mình đạt được trong những năm trở lại đây khi tiếp cận với DevOps và Kubernetes.</p>
+        <img src="https://s3-ap-southeast-1.amazonaws.com/kipalog.com/kzwbse5f62_image.png" alt="">
+        <br/>
+        <p>Trong bài viết này, hy vọng mình sẽ đưa cho các bạn 1 góc nhìn thực tế về cái gọi là DevOps tại các công ty, trong đó có những góc nhìn là chủ quan, có những góc nhìn là từ những người khác chứ không có đúng sai gì nên mong các bạn có thể thoải mái đưa ra quan điểm riêng sau bài viết để góp ý cho mình nhé.</p>
+    <br/>
+    <h2>First things first</h2>
+    <p>Đầu tiên lại là màn giới thiệu bản thân, vẫn là mình - Minh Monmen của mọi ngày nhưng thay vì là người dẫn dắt các bạn qua các trải nghiệm công nghệ thì hôm nay lại đóng vai trò là nhà triết học Đép-Lê Óp để kể về 1 triết lý làm việc mà mình theo đuổi từ khi mới đi làm tới giờ. Bài viết không chỉ nhắc tới khái niệm đang là trending hiện nay, mà còn kể lại những khó khăn khi tuyển dụng và lý do tại sao lại khó tìm kiếm được 1 DevOps chính hiệu đến thế. Rất mong các bạn sẽ ủng hộ bằng nhiều gạch đá.
+
+        !!! Lưu ý: !!! Sau những bài viết có hàm lượng technical lớn thì bài viết này gần như là NON-TECH, các bạn không nên chờ đợi công nghệ cao siêu gì ở đây mà nên kỳ vọng nó sẽ đưa lại cho các bạn 1 chút kinh nghiệm để các bạn build team.</p>
+        <br/>
+    <h2>Câu chuyện 2 chiến tuyến</h2>
+    <p>Câu chuyện bắt đầu từ 1 buổi training dành cho doanh nghiệp, mình có hỏi thử các anh em bên dưới:</p>
+
+        <p style="color: brown;" >&nbsp;&nbsp;&nbsp;&nbsp;	&#8226; Các anh em nghĩ DevOps là cái gì và khoá học này để làm gì?</p>
+        <p>1 anh dev nói (mình không quote chính xác được mà chỉ nhớ ý nhé):</p>
+        
+        <p style="color: brown;">&nbsp;&nbsp;&nbsp;&nbsp; &#8226;Thì giờ DevOps rồi container docker đang là xu hướng rồi, đi học để hợp với xu thế và không lạc hậu, Devops là vừa dev vừa triển khai trên server các thứ.</p>
+        <p>1 anh sysadmin nói:</p>
+        
+        <p style="color: brown; ">&nbsp;&nbsp;&nbsp;&nbsp; &#8226;Theo mình thì DevOps là các công cụ tự động thay thế việc của con người, thay vì mình phải deploy code bằng tay thì sẽ có tool làm tự động</p>
+        <p>Đây là 2 ý kiến từ 2 đầu chiến tuyến. Tại sao mình lại gọi là 2 chiến tuyến, là bởi vì ngay từ khi đi làm với công ty đầu tiên thì mình đã nhìn thấy luôn có 1 bức tường vô hình ngăn cách giữa team Dev và team Sys của 1 công ty. Xuất phát từ nhu cầu trái ngược, thói quen trái ngược, hiểu biết trái ngược dẫn tới việc cùng làm việc trên 1 sản phẩm diễn ra tương đối rắc rối nhưng lại không hiệu quả. Ví dụ tới lúc hệ thống có lỗi, ông dev không được cấp quyền vào hệ thống thì đòi log, debug, ông sys có log nhưng lại không hiểu nội dung bên trong là lỗi chỗ nào,... dẫn tới việc xử lý rất lâu la và lề mề.S</p>
+        <img src="https://s3-ap-southeast-1.amazonaws.com/kipalog.com/jwenu19bnu_image.png" alt="">
+        <p>Lúc đó mình đã phải xin phép leader để đi đêm với team Sys, tức là tạo ra 1 ngoại lệ để mình có thể truy cập vào hệ thống và debug xử lý lỗi. Tất nhiên đây không phải là thứ nên làm ở các hệ thống lớn nhưng là cách để bọn mình có thể xử lý lỗi nhanh nhất có thể. Lúc đó mọi người ngầm thành lập ra cái gọi là đội phản ứng nhanh chuyên xử lý lỗi và có quyền vượt trên các team dev lúc đó khi vừa có hiểu biết sâu về ứng dụng, có quyền truy cập các tài nguyên server. Đây chính là cái mà chúng ta gọi là DevOps sau này.</p>
+        <p>Trở lại với câu chuyện tại doanh nghiệp kia, các bạn có thể thấy rõ ràng là góc nhìn từ 2 phía xuất phát từ những kinh nghiệm cũng đặc điểm công việc của từng bên. Bên Dev thì nghĩ DevOps là Dev và thêm phần cài đặt server, còn bên Ops thì nghĩ DevOps là Sys thêm phần tự động hoá. Chính vì điểm này mà ở nhiều công ty Việt Nam mình thấy đang hơi lạm dụng khái niệm DevOps để đặt cho các team có sẵn của mình 1 cái tên mới. Đó là góc nhìn của họ, còn góc nhìn của mình thì sao?</p>
+        <br/>
+        <h2>Ai là người cần thay đổi?</h2>
+        <p>Sau khoảng 4 năm tiếp cận với docker, k8s, rồi DevOps thì mình đã thu được điều gì? Khác với nhiều anh em khác là sau quá trình làm việc thu được nào là những thứ như hiểu biết công nghệ về container, cloud, gitops, helm chart, cấu hình,... thì mình lại thu được 1 thứ khác và hiểu tại sao nói tới DevOps không phải là nói tới công cụ mà là nói tới 1 nền văn hoá làm việc. Đó chính là tìm ra <b>tiếng nói chung</b> của 2 team Dev và Ops (system, vận hành) thông qua việc <b> chia sẻ thông tin, feedback </b> và <b> thành lập quy trình làm việc </b>. Đây là quá trình cả 2 team đều phải thay đổi để đáp ứng, chứ không phải chỉ cài cắm vài cái CI/CD rồi có thể gọi là DevOps được. Hãy cùng nhìn lại khái niệm DevOps 1 chút:</p>
+        <img src="https://s3-ap-southeast-1.amazonaws.com/kipalog.com/c2t1lwewg7_image.png" alt="">
+        <p>Đây là bức ảnh nói lên tất cả, nhưng lại ít người hiểu nó đầy đủ. DevOps phải xuất phát ngay từ khâu plan chứ không phải là tới khi release mới bắt đầu như hầu hết cách làm việc theo team hiện tại. Mình lấy ví dụ 1 quy trình tại công ty cũ của mình:</p>
+        <div class="chammot">
+            <ul>
+                <li>Dev và Dev lead đưa ra plan về code</li>
+                <li>Dev code logic, implement xong</li>
+                <li>Gửi email yêu cầu Sys cung cấp server / cài đặt DB</li>
+                <li>Sys sau khi cài đặt xong hạ tầng sẽ tiến hành build code và deploy lên các môi trường.</li>
+            </ul>
+        <p>Đây là 1 quy trình hết sức đơn giản, Sys Admin chỉ tham gia vào khâu cuối cùng, khi mà Dev đã hoàn thành việc code. Điều này làm phát sinh những vấn đề liên quan tới hạ tầng mà có thể phía Dev không lường trước như:</p>
+        <div class="chamhai">
+            <ul>
+                <li>Sys team không có kinh nghiệm vận hành 1 loại DB mới</li>
+                <li>Kiến trúc app không phù hợp với môi trường triển khai như log ra nhiều file, env fix trong code,...</li>
+                <li>Tài nguyên Sys cấp không đủ khi ứng dụng cao tải hoặc quá thừa thãi</li>
+                <li>vân vân và mây mây...</li>
+            </ul>
+        <p>Quy trình này vẫn còn được sử dụng tới hiện tại, khi mà nhiều công ty đã có team DevOps luôn. Và chính là thứ tạo nên bức tường giữa 2 team, khi mà team này không biết (hoặc không được biết) team bên kia đang làm gì. Đây là thứ phải thay đổi, và phải thay đổi từ mindset của người quản lý.</p><br/>
+        <h2>Những bức tường khó vượt qua</h2>
+        <p>Ô kê, vậy thì khi tiếp cận với DevOps, khi mà 2 team phải hiểu về công việc của nhau thì sẽ có khó khăn gì?
+            Đối với team Dev:</p>
+        <div class="chamhai">
+            <ul>
+                <li><b>Setup môi trường</b>, sao cho môi trường dev giống với môi trường production</li>
+                <li><b>Mindset của Ops</b>, tức là mindset về vận hành, theo dõi sản phẩm, tài nguyên,...</li>
+                <li><b>System-related problem</b>, như application life cycle, kill signal,...</li>
+                <li><b>Docker</b>, build và tối ưu docker image</li>
+            </ul>
+        </div>
+        <p>Đối với team Sys:</p>
+        <div class="chamba">
+            <ul>
+                <Li><b>Hiểu biết về ngôn ngữ</b>, các kiến thức liên quan tới package management, dependencies,...</Li>
+                <Li><b>Logic ứng dụng</b>, các hiểu biết liên quan tới logic ứng dụng, luồng lạch các thứ,...</Li>
+                <Li><b>Kiến trúc ứng dụng</b>, kiến trúc các thành phần API, worker, cronjob,... và cách tương tác.</Li>
+            </ul>
+        </div>
+       <p> Những khó khăn này khiến cho team dev tạo ra những sản phẩm không phù hợp với hệ thống và ngược lại, hệ thống được team sys tạo ra không phù hợp với ứng dụng của team dev. Đây không hẳn chỉ là những khó khăn về mặt kiến thức (mà có thể được cải thiện qua việc học) mà còn có những khó khăn về mặt tổ chức, quy trình quy chế công ty, bảo mật, phân chia giai cấp,... khiến cho các bên bị thiếu thông tin hoặc bị xem nhẹ vai trò. Muốn vượt qua những bức tường rất cao này thì chẳng còn cách nào khác là thay đổi.</p>
+       <br/>
+       <h2>Thay đổi hay là... sống một cách khó khăn</h2>
+       <p>Tất nhiên, khi đề cập tới những thay đổi phía sau đây, mình không có ý nói rằng mọi doanh nghiệp, mọi môi trường đều phải áp dụng. Chúng ta hoàn toàn có thể giữ lại cách tổ chức team truyền thống, cách vận hành truyền thống, chỉ là nó sẽ khó khăn hơn 1 chút cho chúng ta ở những vấn đề trên mà thôi.</p>
+       <img src="https://s3-ap-southeast-1.amazonaws.com/kipalog.com/88ufr8svfo_image.png" alt="">
+       <p>
+        Còn nếu các bạn muốn thay đổi, và có quyết tâm thay đổi, thì trước tiên cần phải tìm ra tiếng nói chung của 2 bên. Ông có thể kêu tiếng chó tiếng mèo tiếng hổ cũng được nhưng phải kêu cùng nhau. Và bọn mình đã làm điều đó bằng cách đội DevOps sẽ đưa ra 1 số quy tắc ví dụ như:
+       </p>
+       <div class="chambon">
+           <ul>
+               <li><a href="https://12factor.net/">12factor.net</a>: Đây là thứ dễ thấy nhất vì nó đã được recommend 1 cách rộng rãi trong cộng đồng rồi. Đây là các rule để phát triển ứng dụng dễ dàng triển khai trên các hạ tầng, đặc biệt là container, cloud,...:<br/>
+                <div class="chamnam">
+                <p>&#8226; Config load từ biến môi trường</p>
+                <p>&#8226; Chạy app dưới dạng stateless process</p>
+                <p>&#8226; Log ra stdout, stderr</p>   
+                <p>&#8226; App có khả năng chạy nhiều instance</p>
+                <p>&#8226; App phải handle phần life cycle (graceful shutdown) ...</p>    
+                <li><b>Migration rule</b>: Ngoài phần thiết kế app ra thì lúc migration sẽ là lúc mà 2 team phải cọ xát với nhau nhiều nhất, do đó đặt ra rule cho phần này cũng rất quan trọng</li>
+                <li><b>DevOps review</b>: Ngoài việc để dev và dev lead tự làm sản phẩm thì ý kiến của DevOps là rất quan trọng và phải được tham gia ngay từ khi bắt đầu làm sản phẩm chứ không phải khi mọi thứ đã xong xuôi. Trong đó bọn mình sẽ review về:</li>
+            </div>   
+           </ul>
+       </div>
+       <p>Để thực hiện được những cái này thì đòi hỏi cả Dev cũng phải trau dồi những kiến thức về hệ thống và phía DevOps cũng phải nâng cao hiểu biết về ứng dụng để đưa ra được những tư vấn chất lượng. Well, không phải ai cũng muốn học những thứ mình không mạnh, hay không quen, rồi các sếp cũng không đánh giá đúng vai trò của DevOps nên không cho phép tham gia từ đầu,... Như bọn mình đã phải rất khó khăn và vất vả đấu tranh để có thể đặt đúng vai trò của team DevOps cũng như force được đội phát triển follow theo những gì mà bọn mình đưa ra. Nhưng nếu họ follow được thì cuộc sống của bạn sẽ tự nhiên dễ thở hơn rất nhiều đó nhé.</p>
+        </div>
+        <br/>
+        <h2>Một chút suy nghĩ cuối cùng</h2>
+        <p>Mặc dù nghĩ tới DevOps là sẽ nghĩ tới những công cụ tự động để thay thế con người, tuy nhiên để có thể đạt được điều đó thì vai trò của con người lại phải được đặt lên hàng đầu. Nghe thì rất vô lý nhưng lại rất thuyết phục các bạn ạ =))) Bởi vì DevOps không chỉ có 1 bụm tool và setup nó lên mà quan trọng hơn là việc các bạn sử dụng những tool đó vào việc gì, sắp xếp nó ra sao và nhất là việc chia sẻ thông tin cũng như vai trò của 2 team Dev - Ops diễn ra thế nào.</p>
+        <p>Điều quan trọng nhất mà bọn mình đã làm được chính là việc yêu cầu tham gia vào phát triển sản phẩm từ khâu đầu tiên, khi đó phía dev sẽ có những góp ý của bọn mình về mặt hạ tầng cũng như bọn mình có đủ thông tin để lên kế hoạch testing, scaling,... sau này. Chắc chắn điều này không dễ dàng với cả 2 phía vì những ràng buộc về mặt tổ chức cũng như kiến thức. Nhưng hãy tự tin lên và tạo ra thay đổi với công ty ngay từ bây giờ, bởi vì đó là việc làm cần thiết cho việc phát triển nhanh chóng và bền vững.</p>
+        <hr>
+        <p>Bài viết  là chia sẻ của thầy Minh Monmen sau thời gian giảng dạy các lớp đại trà và doanh nghiệp tại Techmaster Việt Nam. Tham khảo link khoá học tại đây <a href="https://techmaster.vn/khoa-hoc/08r/khoa-hoc-kubernetes-can-ban-qua-cac-vi-du">Khoá học Kubernestes căn bản qua các ví dụ</a>
+
+            Bài viết được đăng lại dưới sự đồng ý của tác giả. Link gốc <a href="https://kipalog.com/posts/The-nao-moi-la-1-DevOps-that-su">Thế nào là một DevOps thực sự</p></a>
+        </div>
+        <h1>Bình luận</h1>
+        <div class="search">
+            <input type="text" class="search-txt" name="" placeholder="Viết bình luận của bạn.........">
+            <br/>
+            <a href="#"><button class="btn1">Bình luận</button></a>
+            <a href="#"><button class="btn2">Hủy</button></a>
+        </div>
+</div>
+    <div id="right"></div>
+    </div>
+    Link Gốc <a href="https://techmaster.vn/posts/36145/the-nao-moi-la-mot-devops-thuc-su">Link Gốc</a>
+</body>
+</html>

@@ -1,0 +1,63 @@
+body {
+  background-color: lightgray;
+}
+#container {
+  width: 85%;
+  height: 100%;
+  background-color: white;
+  padding: 5%;
+  margin: auto;
+}
+#left {
+  width: 74%;
+}
+.btn {
+  padding: 1px 1px;
+  background-color: lightgray;
+  float: left;
+  margin-left: 5px;
+}
+p {
+  font-size: 20px;
+}
+hr {
+  margin-top: 2%;
+}
+
+img {
+  max-width: 100%;
+}
+.chammot,
+.chamhai,
+.chamba,
+.chambon,
+.chamnam {
+  font-family: arial;
+  font-size: 18px;
+}
+code {
+  color: red;
+}
+.search-txt {
+  width: 60%;
+  outline: none;
+  border: 2px;
+  background-color: #9999aa59;
+  height: 100px;
+  color: #0a0909;
+  display: inline-block;
+  padding: 8px 40px 8px 15px;
+  text-decoration: none;
+}
+.btn1 {
+  background-color: rgb(2, 2, 53);
+  padding: 5px 30px;
+  color: #f4f4f8;
+}
+.btn2 {
+  background-color: lightgray;
+  padding: 5px 30px;
+}
+#right {
+  background-color: blueviolet;
+}
