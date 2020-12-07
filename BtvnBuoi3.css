@@ -1,0 +1,117 @@
+body {
+  width: 1000px;
+  height: auto;
+  background-color: black;
+  font-size: 20px;
+  color: aliceblue;
+  text-align: center;
+  display: flex;
+  margin: auto;
+}
+.container {
+  margin: auto;
+  padding: 0px;
+}
+.main1 {
+  display: flex;
+  justify-content: space-between;
+}
+.main1 .red {
+  background-color: red;
+  height: 400px;
+  width: 500px;
+  line-height: 400px;
+}
+.main1 .gb {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+}
+.main1 .green {
+  background-color: green;
+  height: 200px;
+  width: 200px;
+  line-height: 200px;
+}
+.main1 .blue {
+  background-color: blue;
+  height: 200px;
+  width: 200px;
+  flex-wrap: wrap;
+  line-height: 200px;
+}
+
+.main2 {
+  display: flex;
+  justify-content: space-between;
+}
+.main2 .red {
+  background-color: red;
+  height: 400px;
+  width: 500px;
+  line-height: 400px;
+}
+.main2 .gb2 {
+  display: flex;
+  flex-direction: column;
+}
+.main2 .green {
+  background-color: green;
+  height: 200px;
+  width: 200px;
+  line-height: 200px;
+}
+.main2 .blue {
+  background-color: blue;
+  height: 200px;
+  width: 200px;
+  flex-wrap: wrap;
+  line-height: 200px;
+}
+.main3 {
+  display: flex;
+  justify-content: center;
+}
+.main3 .red {
+  background-color: red;
+  height: 400px;
+  width: 200px;
+  line-height: 400px;
+}
+.main3 .green {
+  background-color: green;
+  height: 400px;
+  width: 200px;
+  line-height: 400px;
+}
+.main3 .blue {
+  background-color: blue;
+  height: 400px;
+  width: 200px;
+  flex-wrap: wrap;
+  line-height: 400px;
+}
+.main4 {
+  display: flex;
+  justify-content: center;
+}
+.main4 .red {
+  background-color: red;
+  height: 400px;
+  width: 200px;
+  line-height: 400px;
+}
+.main4 .green {
+  background-color: green;
+  height: 400px;
+  width: 200px;
+  line-height: 400px;
+  margin: 0 15px 0 15px;
+}
+.main4 .blue {
+  background-color: blue;
+  height: 400px;
+  width: 200px;
+  flex-wrap: wrap;
+  line-height: 400px;
+}
