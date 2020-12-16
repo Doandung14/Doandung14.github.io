@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BTVN6</title>
+    <style>
+      body {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: "Saira", sans-serif;
+      }
+      .animation {
+        display: inline;
+        animation: change-color infinite 4s;
+      }
+      .animation::before {
+        background-color: purple;
+      }
+      span::before {
+        content: "";
+        animation: change-text infinite 4s;
+      }
+
+      @keyframes change-text {
+        1% {
+          content: "Teaching";
+        }
+
+        50% {
+          content: "Learning";
+        }
+
+        100% {
+          content: "Coding";
+        }
+      }
+      @keyframes change-color {
+        1% {
+          background-color: purple;
+        }
+        50% {
+          background-color: green;
+        }
+        100% {
+          background-color: orange;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>start</h2>
+    <h2 class="animation"><span></span></h2>
+    <h2>today</h2>
+  </body>
+</html>
