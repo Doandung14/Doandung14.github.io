@@ -1,0 +1,120 @@
+body {
+  background-color: #e9ebee;
+  box-sizing: border-box;
+  font-size: 25px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  margin: auto;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+}
+.left {
+  height: 500px;
+  margin-top: auto;
+  box-sizing: border-box;
+  margin-right: 0;
+  padding-right: 32px;
+  width: 580px;
+}
+.right {
+  width: 400px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+  font-size: 25px;
+}
+
+.form {
+  width: 396px;
+  height: 345px;
+  background-color: white;
+  border-radius: 8px;
+  display: block;
+}
+.nut-dangnhap {
+  display: block;
+  border-radius: 6px;
+  background-color: #1877f2;
+  text-align: center;
+  color: whitesmoke;
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 0 16px;
+  width: 317px;
+  margin: 10px auto;
+}
+.nut-quenmk {
+  display: block;
+  border-radius: 6px;
+  background-color: white;
+  text-align: center;
+  color: teal;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 48px;
+  padding: 0 16px;
+  width: 332px;
+  margin: auto;
+}
+hr {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: auto;
+  margin-bottom: 25px;
+}
+.nut-taotk {
+  display: block;
+  border-radius: 6px;
+  background-color: #36a420;
+  text-align: center;
+  color: whitesmoke;
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 0 16px;
+  width: 166px;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+}
+.tk {
+  width: 330px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 48px;
+  border-radius: 6px;
+  display: block;
+  margin-bottom: 10px;
+  padding-left: 14px;
+}
+.mk {
+  width: 330px;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 48px;
+  border-radius: 6px;
+  display: block;
+  padding-left: 14px;
+}
+.text-footer {
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.image {
+  height: 106px;
+  margin: -28px;
+  margin-top: 110px;
+}
