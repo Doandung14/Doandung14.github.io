@@ -96,6 +96,7 @@ a {
   display: block;
   margin-bottom: 10px;
   padding-left: 14px;
+  border: 1px solid #dddfe2;
 }
 .mk {
   width: 330px;
@@ -106,6 +107,7 @@ a {
   border-radius: 6px;
   display: block;
   padding-left: 14px;
+  border: 1px solid #dddfe2;
 }
 .text-footer {
   font-size: 16px;
@@ -117,4 +119,146 @@ a {
   height: 106px;
   margin: -28px;
   margin-top: 110px;
+}
+.form-signup {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  border-radius: 10px;
+  border: 0.5px solid;
+}
+.ho {
+  padding: 9px;
+  border-radius: 6px;
+  background-color: lightgray;
+}
+.ten {
+  padding: 9px;
+  border-radius: 6px;
+  background-color: lightgray;
+}
+.hoten {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+.text2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.pp {
+  padding: 11px;
+  margin: 10px 28px 0px 28px;
+  border-radius: 6px;
+  background-color: lightgray;
+}
+.text2 input {
+  border: 1px solid;
+}
+.hoten input {
+  border: 1px solid;
+  width: 170px;
+}
+.selectbirthday {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 380px;
+  margin: auto;
+}
+.textbirthday {
+  color: #606770;
+  font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 20px;
+  margin-bottom: 0;
+  margin-top: 10px;
+  padding: 0px 10px 0px 10px;
+}
+select {
+  width: 120px;
+  height: 34px;
+  border-radius: 4px;
+  display: flex;
+  align-content: space-around;
+}
+.textgendel {
+  color: #606770;
+  font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 20px;
+  margin-bottom: 0;
+  margin-top: 10px;
+  padding: 0px 10px 0px 10px;
+}
+.pickgendel {
+  width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+.selectgendel {
+  font-size: 15px;
+  background-color: whitesmoke;
+  width: 105px;
+  height: 38px;
+  line-height: 38px;
+  margin: auto;
+  border-radius: 6px;
+  border: 1px solid;
+}
+.signup-intro {
+  margin-left: 30px;
+  line-height: 0.6;
+}
+.signup-intro h3 {
+  color: #1c1e21;
+  font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+.signup-intro p {
+  color: #606770;
+  font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  margin-top: 5px;
+}
+.form-signup hr {
+  width: 100%;
+  margin-left: 0;
+}
+.rules{
+  font-size: 11px;
+  color: #777
+  margin: 20px auto 20px auto;
+}
+.rules p{
+  padding:0px 10px 0px 10px;
+}
+#image{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left:97%;
+  bottom: 95%;
+}
+.nut-dktk {
+  display: block;
+  border-radius: 6px;
+  background-color: #36a420;
+  text-align: center;
+  color: whitesmoke;
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 34px;
+  padding: 0 16px;
+  width: 130px;
+  margin: auto;
 }
