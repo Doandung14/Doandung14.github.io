@@ -39,37 +39,53 @@
     <script>
       // Bài 1: Highlight tất cả các từ có độ dài lớn hơn hoặc bằng 8 ký tự trong đoạn văn (background = "yellow")
 
-      let para = document.querySelector("p")
+      let para = document.querySelector("p");
       let newpara = para.innerHTML.split(" ");
       console.log(para);
-      let countStr = (str) => (str.length >=8 ) ? true : false;
-      for (i = 0; i < newpara.length ; i++){
-          if (countStr(newpara[i])){
-              newpara[i] = `<span style="background-color: yellow" > ${newpara[i]}</span>`
-          }
+      let countStr = (str) => (str.length >= 8 ? true : false);
+      for (i = 0; i < newpara.length; i++) {
+        if (countStr(newpara[i])) {
+          newpara[
+            i
+          ] = `<span style="background-color: yellow" > ${newpara[i]}</span>`;
+        }
       }
       para.innerHTML = newpara.join(" ");
 
       // bài 2: Thêm link hiển thị text "facebook" link đến trang facebook.com ở sau thẻ p
       let body = document.querySelector("body");
       let link = document.createElement("a");
-      link.innerText="Fb";
+      link.innerText = "Fb";
       link.href = "fb.com";
       link.target = "_blank";
 
       document.body.append(link);
 
       // bài 3. Đếm số từ có trong đoạn văn. Tạo 1 thẻ div để hiển thị số từ
-      let word = document.createElement("div");
-      word = newpara.length
-      console.log(word);
-      document.body.after(word)
-      // Bài 4: thay thế ký hiệu ? => 🤔 và ! => 😲
-      for ( i = 0 ; i < newpara.length;i ++);
-          for( j = 0; j < newpara[i].length; j++){
-             console.log(newpara[i].[j]);
-          }
+      // Tạo ra 1 biến đếm số từ qua đoạn văn đã đc cắt thành màng bởi dấu space ở trên (ở câu 1)
+      let countWords = newpara.length;
+      // console.log(countWords);
+      // Tạo 1 biến div để truyền bộ đếm từ vào
+      let countWordsEle = document.createElement("div");
+      countWordsEle = `${countWords} words`;
+      // console.log(countWordsEle);
+      document.body.after(countWordsEle);
+
+      // Bt4: Thay thế kí hiệu ? => 🤔 và ! => 😲
+      //   para.innerText.replace(/\?/g, "🤔");
+      //   para.innerText.replace(/\?/g, "😲");
+
+      let newpara1 = para.innerHTML.split("");
+      console.log(newpara1);
+      for (i = 0; i < newpara1.length; i++) {
+        if (newpara1[i] == "?") {
+          newpara1[i] = "🤔";
+        }
+        if (newpara1[i] == "!") {
+          newpara1[i] = "😲";
+        }
       }
+      para.innerHTML = newpara1.join("");
     </script>
   </body>
 </html>
