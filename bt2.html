@@ -1,0 +1,78 @@
+<!-- Cho mã HTML có nội dung như sau: 
+<ul id="list">
+   <li>Item 1</li>
+   <li>Item 2</li>
+   <li>Item 3</li>
+   <li>Item 4</li>
+   <li>Item 5</li>
+   <li>Item 6</li>
+   <li>Item 7</li>
+ </ul>
+
+ Sử dụng javascript để thực hiện những công việc sau
+
+ 1. Thêm 3 thẻ <li> có nội dung Item 8, Item 9, Item 10 vào cuối danh sách
+
+ 2. Sửa nội dung cho thẻ <li> 1 thành màu đỏ (color)
+
+ 3. Sửa background cho thẻ <li> 3 thành màu xanh (background-color)
+
+ 4. Remove thẻ <li> 4
+
+ 5. Thêm thẻ <li> mới thay thế cho thẻ <li> 4 bị xóa ở bước trước, thẻ <li> mới có nội dung bất kỳ
+
+ 6. Thêm 1 nút "add" + 1 ô input để nhập text ở đằng sau ul -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="list">
+      <li>Item1</li>
+      <li>Item2</li>
+      <li>Item3</li>
+      <li>Item4</li>
+      <li>Item5</li>
+      <li>Item6</li>
+      <li>Item7</li>
+    </ul>
+
+    <script>
+      let ul = document.querySelector("ul");
+      let li8 = document.createElement("li");
+      let li9 = document.createElement("li");
+      let li10 = document.createElement("li");
+      li8.textContent = "item8";
+      li9.textContent = "item9";
+      li10.textContent = "item10";
+      ul.insertAdjacentElement("beforeend", li8);
+      ul.insertAdjacentElement("beforeend", li9);
+      ul.insertAdjacentElement("beforeend", li10);
+
+      let li1 = document.querySelector("li:nth-child(1)");
+      li1.style.color = "red";
+      let li3 = document.querySelector("li:nth-child(3)");
+      li3.style.backgroundColor = "blue";
+
+      let li4 = document.querySelector("li:nth-child(4)");
+      ul.removeChild(li4);
+
+      let newli4 = document.createElement("li");
+      newli4.textContent = "item4.1";
+      let li5 = document.querySelector("li:nth-child(3)");
+      li5.append(newli4);
+      newli4.style.backgroundColor = "white"; // Dinh background li 3 . neu de prepend tren item 5 thi item 5 bo mat dau cham
+
+      let button = document.createElement("button")
+      let input = document.createElement("input")
+      button.textContent = "add"
+      ul.after(button)
+      ul.after(input)
+      input.placeholder = "text"
+    </script>
+  </body>
+</html>
