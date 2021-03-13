@@ -12,12 +12,12 @@ var levelEl = document.querySelector('#level');
 var endScore = document.querySelector('.score');
 // Khai báo biến
 const words = [
-    'write',
-    'began',
-    'he',
-    'sea',
-    'eye',
-    'learn',
+    'dungyeumy',
+    'iuhamy',
+    'anhyeuem',
+    'iucongtua',
+    'iuuu',
+    'aiuem',
 ];
 
 let word;
@@ -76,14 +76,7 @@ function addWordToDom() {
     wordEl.innerHTML = [...word].map(char => `<span>${char}</span>`).join('');
 }
 function updateTime(){
-        var value = levelEl.value;
-        if (value === 'easy'){
-             time = 20;
-        } else if (value === 'medium'){
-             time = 15;
-        } else {
-             time = 10;
-        }       
+        
     time--
     timeEl.innerText = `${time}s`;
     
@@ -111,7 +104,14 @@ btnEl.addEventListener("click", function() {
     startEl.style.display = "none";
     interval = setInterval(updateTime, 1000);
     timeEl.innerText = `${time}s`
-    
+    var value = levelEl.value;
+        if (value === 'easy'){
+             time = 20;
+        } else if (value === 'medium'){
+             time = 15;
+        } else {
+             time = 10;
+        }       
 })
 
 
