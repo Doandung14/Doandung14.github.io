@@ -12,12 +12,12 @@ var levelEl = document.querySelector('#level');
 var endScore = document.querySelector('.score');
 // Khai báo biến
 const words = [
-    'dungyeumy',
-    'iuhamy',
-    'anhyeuem',
-    'iucongtua',
-    'iuuu',
-    'aiuem',
+    'ahihi',
+    'hichic',
+    'cuccuc',
+    'ihaha',
+    'hehe',
+    'huhu',
 ];
 
 let word;
@@ -90,6 +90,7 @@ function updateTime(){
         clearInterval(interval)
         containerEl.style.display = "none";
         endEl.style.display = "flex";
+        scoreEl.innerText = `${score}`
         
     } 
 }
@@ -111,7 +112,8 @@ btnEl.addEventListener("click", function() {
              time = 15;
         } else {
              time = 10;
-        }       
+        }     
+      
 })
 
 
@@ -120,6 +122,7 @@ btnEl.addEventListener("click", function() {
 btnReloadEl.addEventListener("click", function() {
     endEl.style.display = "none";
     startEl.style.display = "flex";
+    scoreEl.innerHTML = 0;
 })
 
 containerEl.style.display = 'none';
